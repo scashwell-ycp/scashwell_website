@@ -10,47 +10,116 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+   @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap');
 
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Archivo', sans-serif;
 }
 
 body{
-  background-color: #F6FBFF
+  background-color: #F6FBFF;
+  overflow-x: hidden;
 }
 
 header{
   background-image: url('../img/home_hero_img.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   height: 950px;
   margin: 0px;
-}
-
-nav{
+  position: relative;
+  width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul{
+header ul{
   transform: rotate(90deg);
   list-style-type: none;
   display: flex;
-  align-items: relative;
-  left: 80%;
+  background-color: #000;
+  top: 135px;
+  width: 350px;
+  margin: 0px;
+  position: absolute;
+  right: -150px;
 }
 
-nav ul li{
-  margin: 10px 50px 10px 15px;
+header ul li{
+  margin: 10px 25px 10px 25px;
 }
 
-nav ul li a{
+header ul li a{
   text-decoration: none;
-  color: #FFFFFF
+  color: #FFFFFF;
+  font-size: 26px;
 }
 
+header h1{
+  margin: 0px;
+  font-size: 170px;
+  color: #fff;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/* sets up main content sections for pages */
+
+.main_content{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+/* sets up footer area for pages */
+
+footer{
+  width: 100vw;
+  height: 5%;
+  background-color: #C8DAED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer nav ul li{
+  margin: 5px;
+}
+
+footer nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  font-family: 'Archivo', sans-serif;
+}
+
+footer nav ul li a:hover{
+  color: #fff;
+}
 
 
 /*
