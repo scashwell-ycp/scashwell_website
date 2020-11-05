@@ -92,20 +92,110 @@ header h1{
   margin-left: -20vw;
 }
 
+.main_content2{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 .members{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding: 20px 50px 20px 30px;
 }
 
-/* sets up footer area for pages */
+.members h2{
+  transform: rotate(270deg);
+}
 
-.tour_leftcolumn{
+/* sets up the bios for each band member with their content stacked underneath */
 
+.bios{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
 
+/* Closing Image */
+
+.closing_image{
+  background-image: url('../img/about_group.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 700px;
+  margin: 0 auto;
+}
+
+/* Biography Styles */
+
+.biography{
+  margin: 2% 0%;
+}
+
+/* Tour Stuff */
+
+.tour_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.tour_content a{
+  margin: 2%;
+}
+
+.tour_content button{
+  width: 100px;
+  height: 45px;
+  background-color: #C8DAE9;
+  color: black;
+  border: none;
+  margin: 2%;
+}
+
+.tour_leftcolumn,
+.tour_centercolumn,
+.tour_rightcolumn{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E5E5E5;
+  margin: 2% 0%;
+}
+
+.tour_leftcolumn ul,
+.tour_centercolumn ul,
+.tour_rightcolumn ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+.tour_doc{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2%;
 }
 
 
 
-
+/* sets up footer */
 
 footer{
   width: 100vw;
