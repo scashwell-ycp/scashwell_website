@@ -47,7 +47,7 @@ header{
   font-size: 100px;
   text-align: center;
   transform: rotate(270deg);
-  
+
 }
 
 .main_content2 .members h3{
@@ -56,8 +56,9 @@ header{
 }
 
 .main_content2 button{
-  width: 100px;
-  height: 45px;
+  font-size: 40px;
+  width: 290px;
+  height: 100px;
   background-color: #C8DAE9;
   color: black;
   border: none;
@@ -66,6 +67,7 @@ header{
 
 .music_carousel h2{
   transform: rotate(270deg);
+  font-size: 100px;
 }
 
 #about_bg{
@@ -127,8 +129,8 @@ header h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
+  flex-direction: row;
+  margin: 5 auto;
 }
 
 .members{
@@ -179,6 +181,7 @@ header h1{
   flex-direction: row;
   width: 100vw;
   margin: 0 auto;
+  line-height: 70px;
 }
 
 .tour_content a{
@@ -186,8 +189,9 @@ header h1{
 }
 
 .tour_content button{
-  width: 100px;
-  height: 45px;
+  font-size: 40px;
+  width: 290px;
+  height: 100px;
   background-color: #C8DAE9;
   color: black;
   border: none;
@@ -215,6 +219,7 @@ header h1{
 }
 
 .tour_doc{
+  font-size: 75px;
   width: 100vw;
   display: flex;
   justify-content: center;
