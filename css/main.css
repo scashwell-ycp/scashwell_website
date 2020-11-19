@@ -227,18 +227,24 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 90vw;
+    width: 100vw;
     background-color: #ECECEC;
     font-size: 30px;
     text-align: center;
   }
+
+  .memberheader {
+    width: 190px;
+    position: relative;
+    top: 90px;
+}
 
   .biography{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 90vw;
   }
 
   .biocontent{
@@ -271,6 +277,10 @@ textarea {
   .slider {
       width: 90%;
       margin: 100px auto;
+  }
+
+  .slider img{
+    width: 50%;
   }
 
   .slick-slide {
