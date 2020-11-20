@@ -189,6 +189,8 @@ textarea {
     flex-direction: column;
     width: 45%;
     margin: 2%;
+    font-size: 100px;
+    font-weight: bold;
   }
 
   .hero {
@@ -231,6 +233,7 @@ textarea {
     background-color: #ECECEC;
     font-size: 30px;
     text-align: center;
+    font-weight: bold;
   }
 
   .memberheader {
@@ -455,11 +458,26 @@ textarea {
     /* Home Page */
 
     header h1 {
-      font-size: 120px;
+      font-size: 80px;
     }
 
     .main_content{
       flex-direction: column;
+    }
+
+    .rightbox{
+      font-size:50px;
+      font-weight: bold;
+    }
+
+    .hero button{
+      font-size: 25px;
+      width: 138px;
+      height: 48px;
+      background-color: #C8DAE9;
+      color: black;
+      border: none;
+      margin: 2%;
     }
 
     .music_carousel{
@@ -468,7 +486,7 @@ textarea {
 
     .music_carousel h2 {
       transform: rotate(0deg);
-      font-size: 80px;
+      font-size: 50px;
   }
 
   .hero {
@@ -478,15 +496,23 @@ textarea {
 
     /* About Page */
 
+.header h1{
+  font-size: 90px;
+}
+
     .memberheader {
       width: 100px;
   }
 
     .memberheader h2 {
-      font-size: 62px;
+      font-size: 50px;
       position: relative;
       top: 100px;
   }
+
+    .bios{
+      font-size: 24px;
+    }
 
     .bios img {
       width: 180px;
@@ -496,6 +522,10 @@ textarea {
 
     /* Tour Page */
 
+    .tour_bg h1{
+      font-size: 90px;
+    }
+
     .tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
       width: 30%;
     }
@@ -504,14 +534,23 @@ textarea {
       font-size: 24px;
     }
 
-    .tour_doc {
-      font-size: 35px;
+    .tour_content button{
+      font-size: 25px;
+      width: 154px;
+      height: 48px;
+      background-color: #C8DAE9;
+      color: black;
+      border: none;
+      margin: 2%;
     }
 
+    .tour_doc {
+      font-size: 50px;
+    }
 
     iframe{
-      width: 600px;
-      height: 400px;
+      width: 658px;
+      height: 371px;
     }
 
 
@@ -524,6 +563,91 @@ textarea {
 
   @media screen and (max-width: 320px){
 
+    header h1 {
+      font-size: 40px;
+    }
+
+    .main_content{
+      flex-direction: column;
+    }
+
+    .rightbox{
+      font-size:23px;
+      font-weight: bold;
+    }
+
+    .music_carousel{
+      flex-direction: column;
+    }
+
+    .music_carousel h2 {
+      transform: rotate(0deg);
+      font-size: 23px;
+    }
+
+    .hero {
+    width: 130%;
+    }
+
+
+    /* About Page */
+
+    .header h1{
+    font-size: 45px;
+    }
+
+    .memberheader {
+      width: 30px;
+    }
+
+    .memberheader h2 {
+      font-size: 30px;
+      position: relative;
+      top: 100px;
+    }
+
+    .bios{
+      font-size: 15px;
+    }
+
+    .bios img {
+      width: 180px;
+    }
+
+
+
+    /* Tour Page */
+
+    .tour_bg h1{
+      font-size: 45px;
+    }
+
+    .tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
+      width: 30%;
+    }
+
+    .tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
+      font-size: 24px;
+    }
+
+    .tour_content button{
+      font-size: 20px;
+      width: 105px;
+      height: 36px;
+      background-color: #C8DAE9;
+      color: black;
+      border: none;
+      margin: 2%;
+    }
+
+    .tour_doc {
+      font-size: 20px;
+    }
+
+    iframe{
+      width: 283px;
+      height: 160px;
+    }
 
 
 
