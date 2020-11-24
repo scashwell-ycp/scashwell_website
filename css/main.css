@@ -1,835 +1,548 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-   @import url('https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap');
-
+/** What follows is the result of much research on cross-browser styling.* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,* Kroc Camen, and the H5BP dev community and team.*/
+/* ==========================================================================Base styles: opinionated defaults========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Archivo+Black&display=swap');
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: 'Archivo', sans-serif;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+	font-family: 'Archivo', sans-serif;
 }
-
 body{
-  background-color: #F6FBFF;
-  overflow-x: hidden;
+	background-color: #F6FBFF;
+	overflow-x: hidden;
 }
-
-
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
+/** Remove text-shadow in selection highlight:* https://twitter.com/miketaylr/status/12228805301** Vendor-prefixed and regular ::selection selectors cannot be combined:* https://stackoverflow.com/a/16982510/7133471** Customize the background color to match your design.*/
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
-
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
-
-/*
- * A better looking default horizontal rule
- */
-
+/** A better looking default horizontal rule*/
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
+/** Remove the gap between audio, canvas, iframes,* images, videos and the bottom of their containers:* https://github.com/h5bp/html5-boilerplate/issues/440*/
+audio,canvas,iframe,img,svg,video {
+	vertical-align: middle;
 }
-
-/*
- * Remove default fieldset styles.
- */
-
+/** Remove default fieldset styles.*/
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
+/** Allow only vertical resizing of textareas.*/
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-   header{
-    background-image: url('../img/home_hero_img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 950px;
-    margin: 0px;
-    position: relative;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .music_carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 90vw;
-    margin: 5%;
-  }
-
-  .carousel_box{
-    width: 75%;
-  }
-
-  .music_carousel h2{
-    transform: rotate(270deg);
-    font-size: 100px;
-  }
-
-  #about_bg{
-  background-image: url('../img/about_header.jpg');
-  }
-
-  #tour_bg{
-  background-image: url('../img/tour_header.jpg');
-  }
-
-  header ul {
-    transform: rotate(90deg);
-    list-style-type: none;
-    display: flex;
-    background-color: #000;
-    top: 135px;
-    width: 380px;
-    margin: 0px;
-    position: absolute;
-    right: -162px;
-  }
-
-  .tour_bg ul li{
-  background-color: #C8DAE9;
-  }
-
-  header ul li{
-    margin: 10px 25px 10px 25px;
-  }
-
-  header ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 26px;
-  }
-
-  header h1{
-    margin: 0px;
-    font-size: 170px;
-    color: #fff;
-    font-family: 'Archivo Black', sans-serif;
-  }
-
-  /* sets up main content sections for pages */
-
-  .main_content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 90vw;
-    margin: 5%;
-  }
-
-  .leftbox,
-  .rightbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    margin: 2%;
-    font-size: 100px;
-    font-weight: bold;
-  }
-
-  .hero {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .hero a{
-    text-decoration: none;
-  }
-
-  button.shopbuttons{
-    font-size: 30px;
-    width: 180px;
-    height: 100px;
-    background-color: #C8DAE9;
-    color: black;
-    border: none;
-    margin: 2%;
-  }
-
-  .main_content2{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
-  .members{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100vw;
-    background-color: #ECECEC;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .memberheader {
-    width: 190px;
-    position: relative;
-    top: 90px;
+/* ==========================================================================Author's custom styles========================================================================== */
+header{
+	background-image: url('../img/home_hero_img.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 950px;
+	margin: 0px;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-  .biography{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90vw;
-  }
-
-  .biocontent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    margin: 2%;
-  }
-
-  .main_content h2{
-    font-size: 90px;
-    text-align: center;
-  }
-
-  .memberheader h2{
-    font-size: 100px;
-    text-align: center;
-    transform: rotate(270deg);
-
-  }
-
-  /* Slick Slider */
-
-  * {
-    box-sizing: border-box;
-  }
-
-  .slider {
-      width: 90%;
-      margin: 100px auto;
-  }
-
-  .slider img{
-    width: 50%;
-  }
-
-  .slick-slide {
-    margin: 0px 20px;
-  }
-
-  .slick-slide img {
-    width: 100%;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    color: black;
-  }
-
-
-  .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .2;
-  }
-
-  .slick-active {
-    opacity: .5;
-  }
-
-  .slick-current {
-    opacity: 1;
-  }
-
-  /* sets up the bios for each band member with their content stacked underneath */
-
-  .bios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-  }
-
-
-  /* Closing Image */
-
-  .closing_image{
-    background-image: url('../img/about_group.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 700px;
-    margin: 0 auto;
-  }
-
-  /* Biography Styles */
-
-  .biography{
-    font-size: 20px;
-    margin: 2% 0%;
-  }
-
-  /* Tour Stuff */
-
-  .tour_content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    width: 100vw;
-    margin: 0 auto;
-    line-height: 70px;
-  }
-
-  .tour_content a{
-    margin: 2%;
-  }
-
-  .tour_content button{
-    font-size: 40px;
-    width: 290px;
-    height: 100px;
-    background-color: #C8DAE9;
-    color: black;
-    border: none;
-    margin: 2%;
-  }
-
-  .tour_leftcolumn,
-  .tour_centercolumn,
-  .tour_rightcolumn{
-    width: 20%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #E5E5E5;
-    margin: 2% 0%;
-  }
-
-  .tour_leftcolumn ul,
-  .tour_centercolumn ul,
-  .tour_rightcolumn ul{
-    list-style-type: none;
-    text-align: center;
-    font-size: 30px;
-    padding: 0px;
-  }
-
-  .tour_doc{
-    font-size: 75px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 2%;
-  }
-
-
-
-  /* sets up footer */
-
-  footer{
-    width: 100vw;
-    height: 5%;
-    background-color: #C8DAED;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  footer nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  footer nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 2%;
-    padding: 0px;
-  }
-
-  footer nav ul li{
-    margin: 5px 30px 5px 30px;
-  }
-
-  .navigation li{
-    justify-content: center;
-    align-items: center;
-    margin: 5px 100px 5px 20px;
-  }
-
-  footer nav ul li a{
-    text-decoration: none;
-    color: #000;
-    font-size: 30px;
-    font-family: 'Archivo', sans-serif;
-  }
-
-  footer nav ul li a:hover{
-    color: #fff;
-  }
-
-  /* Media Queries */
-
-
-  @media screen and (max-width: 768px){
-
-    /* Home Page */
-
-    header h1 {
-      font-size: 80px;
-    }
-
-    .main_content{
-      flex-direction: column;
-    }
-
-    .rightbox{
-      font-size:50px;
-      font-weight: bold;
-    }
-
-    .hero button{
-      font-size: 25px;
-      width: 138px;
-      height: 48px;
-      background-color: #C8DAE9;
-      color: black;
-      border: none;
-      margin: 2%;
-    }
-
-    .music_carousel{
-      flex-direction: column;
-    }
-
-    .music_carousel h2 {
-      transform: rotate(0deg);
-      font-size: 50px;
-  }
-
-  .hero {
-    width: 130%;
-  }
-
-
-    /* About Page */
-
-.header h1{
-  font-size: 90px;
+.music_carousel{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 90vw;
+	margin: 5%;
 }
-
-    .memberheader {
-      width: 100px;
-  }
-
-    .memberheader h2 {
-      font-size: 50px;
-      position: relative;
-      top: 100px;
-  }
-
-    .bios{
-      font-size: 24px;
-    }
-
-    .bios img {
-      width: 180px;
-  }
-
-
-
-    /* Tour Page */
-
-    .tour_bg h1{
-      font-size: 90px;
-    }
-
-    .tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
-      width: 30%;
-    }
-
-    .tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
-      font-size: 24px;
-    }
-
-    .tour_content button{
-      font-size: 25px;
-      width: 154px;
-      height: 48px;
-      background-color: #C8DAE9;
-      color: black;
-      border: none;
-      margin: 2%;
-    }
-
-    .tour_doc {
-      font-size: 50px;
-    }
-
-    iframe{
-      width: 658px;
-      height: 371px;
-    }
-
-
-
-  }
-
-
-
-
-
-  @media screen and (max-width: 320px){
-
-    header h1 {
-      font-size: 40px;
-    }
-
-    .main_content{
-      flex-direction: column;
-    }
-
-    .rightbox{
-      font-size:23px;
-      font-weight: bold;
-    }
-
-    .music_carousel{
-      flex-direction: column;
-    }
-
-    .music_carousel h2 {
-      transform: rotate(0deg);
-      font-size: 23px;
-    }
-
-    .hero {
-    width: 130%;
-    }
-
-
-    /* About Page */
-
-    .header h1{
-    font-size: 45px;
-    }
-
-    .memberheader {
-      width: 30px;
-    }
-
-    .memberheader h2 {
-      font-size: 30px;
-      position: relative;
-      top: 100px;
-    }
-
-    .bios{
-      font-size: 15px;
-    }
-
-    .bios img {
-      width: 180px;
-    }
-
-
-
-    /* Tour Page */
-
-    .tour_bg h1{
-      font-size: 45px;
-    }
-
-    .tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
-      width: 30%;
-    }
-
-    .tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
-      font-size: 24px;
-    }
-
-    .tour_content button{
-      font-size: 20px;
-      width: 105px;
-      height: 36px;
-      background-color: #C8DAE9;
-      color: black;
-      border: none;
-      margin: 2%;
-    }
-
-    .tour_doc {
-      font-size: 20px;
-    }
-
-    iframe{
-      width: 283px;
-      height: 160px;
-    }
-
-
-
-
-  }
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+.carousel_box{
+	width: 75%;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+.music_carousel h2{
+	transform: rotate(270deg);
+	font-size: 100px;
 }
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+#about_bg{
+	background-image: url('../img/about_header.jpg');
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+#tour_bg{
+	background-image: url('../img/tour_header.jpg');
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
+header ul {
+	transform: rotate(90deg);
+	list-style-type: none;
+	display: flex;
+	background-color: #000;
+	top: 135px;
+	width: 380px;
+	margin: 0px;
+	position: absolute;
+	right: -148px;
 }
-
-.clearfix::after {
-  clear: both;
+.tour_bg ul li{
+	background-color: #C8DAE9;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+header ul li{
+	margin: 10px 25px 10px 25px;
 }
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+header ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 26px;
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+header h1{
+	margin: 0px;
+	font-size: 170px;
+	color: #fff;
+	font-family: 'Archivo Black', sans-serif;
+}
+/* sets up main content sections for pages */
+.main_content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 90vw;
+	margin: 5%;
+}
+.leftbox,.rightbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 45%;
+	margin: 2%;
+	font-size: 100px;
+	font-weight: bold;
+}
+.hero {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+.hero a{
+	text-decoration: none;
+}
+button.shopbuttons{
+	font-size: 30px;
+	width: 180px;
+	height: 100px;
+	background-color: #C8DAE9;
+	color: black;
+	border: none;
+	margin: 2%;
+}
+.main_content2{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 auto;
+}
+.members{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100vw;
+	background-color: #ECECEC;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.memberheader {
+	width: 190px;
+	position: relative;
+	top: 90px;
+}
+.biography{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 90vw;
+}
+.biocontent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	margin: 2%;
+}
+.main_content h2{
+	font-size: 90px;
+	text-align: center;
+}
+.memberheader h2{
+	font-size: 100px;
+	text-align: center;
+	transform: rotate(270deg);
+}
+/* Slick Slider */
+* {
+	box-sizing: border-box;
+}
+.slider {
+	width: 90%;
+	margin: 100px auto;
+}
+.slider img{
+	width: 50%;
+}
+.slick-slide {
+	margin: 0px 20px;
+}
+.slick-slide img {
+	width: 100%;
+}
+.slick-prev:before,.slick-next:before {
+	color: black;
+}
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
+}
+.slick-active {
+	opacity: .5;
+}
+.slick-current {
+	opacity: 1;
+}
+/* sets up the bios for each band member with their content stacked underneath */
+.bios{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 10px;
+}
+/* Closing Image */
+.closing_image{
+	background-image: url('../img/about_group.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 700px;
+	margin: 0 auto;
+}
+/* Biography Styles */
+.biography{
+	font-size: 20px;
+	margin: 2% 0%;
+}
+/* Tour Stuff */
+.tour_content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	width: 100vw;
+	margin: 0 auto;
+	line-height: 70px;
+}
+.tour_content a{
+	margin: 2%;
+}
+.tour_content button{
+	font-size: 40px;
+	width: 290px;
+	height: 100px;
+	background-color: #C8DAE9;
+	color: black;
+	border: none;
+	margin: 2%;
+}
+.tour_leftcolumn,.tour_centercolumn,.tour_rightcolumn{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #E5E5E5;
+	margin: 2% 0%;
+}
+.tour_leftcolumn ul,.tour_centercolumn ul,.tour_rightcolumn ul{
+	list-style-type: none;
+	text-align: center;
+	font-size: 30px;
+	padding: 0px;
+}
+.tour_doc{
+	font-size: 75px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2%;
+}
+/* sets up footer */
+footer{
+	width: 100vw;
+	height: 5%;
+	background-color: #C8DAED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+footer nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 2%;
+	padding: 0px;
+}
+footer nav ul li {
+	margin: 5px 10px 5px 10px;
+}
+.navigation li{
+	justify-content: center;
+	align-items: center;
+	margin: 5px 100px 5px 20px;
+}
+footer nav ul li a{
+	text-decoration: none;
+	color: #000;
+	font-size: 30px;
+	font-family: 'Archivo', sans-serif;
+}
+footer nav ul li a:hover{
+	color: #fff;
+}
+footer nav ul li a img{
+	width: 20px;
+}
+/* Media Queries */
+@media screen and (max-width: 768px){
+	/* Home Page */
+	header h1 {
+		font-size: 80px;
+	}
+	.main_content{
+		flex-direction: column;
+	}
+	header ul {
+		right: -162px;
+	}
+	.main_content h2 {
+		font-size: 50px;
+		text-align: center;
+	}
+	.rightbox{
+		font-size:50px;
+		font-weight: bold;
+	}
+	.hero button{
+		font-size: 25px;
+		width: 138px;
+		height: 48px;
+		background-color: #C8DAE9;
+		color: black;
+		border: none;
+		margin: 2%;
+	}
+	.music_carousel{
+		flex-direction: column;
+	}
+	.music_carousel h2 {
+		transform: rotate(0deg);
+		font-size: 50px;
+	}
+	.hero {
+		width: 130%;
+	}
+	.carousel_box {
+		width: 95%;
+	}
+	button.slick-next, button.slick-prev {
+		top: 60px !important;
+	}
+	/* About Page */
+	.header h1{
+		font-size: 90px;
+	}
+	.memberheader {
+		width: 100px;
+	}
+	.memberheader h2 {
+		font-size: 50px;
+		position: relative;
+		top: -90px;
+	}
+	.bios{
+		font-size: 24px;
+	}
+	.bios img {
+		width: 180px;
+	}
+	/* Tour Page */
+	.tour_bg h1{
+		font-size: 90px;
+	}
+	.tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
+		width: 30%;
+	}
+	.tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
+		font-size: 24px;
+	}
+	.tour_content button{
+		font-size: 25px;
+		width: 154px;
+		height: 48px;
+		background-color: #C8DAE9;
+		color: black;
+		border: none;
+		margin: 2%;
+	}
+	.tour_doc {
+		font-size: 50px;
+	}
+	iframe{
+		width: 658px;
+		height: 371px;
+	}
+}
+@media screen and (max-width: 320px){
+	header h1 {
+		font-size: 40px;
+	}
+	.main_content{
+		flex-direction: column;
+	}
+	.rightbox{
+		font-size:23px;
+		font-weight: bold;
+	}
+	.music_carousel{
+		flex-direction: column;
+	}
+	.music_carousel h2 {
+		transform: rotate(0deg);
+		font-size: 23px;
+	}
+	.members{
+		flex-direction: column;
+	}
+	.memberheader h2 {
+		transform: rotate(0deg);
+	}
+	.navigation li {
+		justify-content: center;
+		align-items: center;
+		margin: 5px 10px 5px 10px;
+	}
+	.hero {
+		width: 130%;
+	}
+	header ul {
+		transform: rotate(90deg);
+		list-style-type: none;
+		display: flex;
+		background-color: #000;
+		top: 135px;
+		width: 380px;
+		margin: 0px;
+		position: absolute;
+		right: -170px;
+	}
+	.leftbox, .rightbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+		margin: 2%;
+		font-size: 100px;
+		font-weight: bold;
+	}
+	.leftbox img{
+		width: 290px;
+	}
+	.main_content h2 {
+		font-size: 50px;
+		text-align: center;
+	}
+	button.shopbuttons {
+		font-size: 26px;
+		width: 120px;
+		height: 60px;
+		margin: 2%;
+	}
+	.slick-slide img {
+		width: 200px;
+	}
+	button.slick-next, button.slick-prev {
+		font-size: 0;
+		background-color: transparent;
+		top: 70px !important;
+	}
+	/* About Page */
+	.header h1{
+		font-size: 45px;
+	}
+	.memberheader {
+		width: 30px;
+	}
+	.memberheader h2 {
+		font-size: 30px;
+		position: relative;
+		top: -80px;
+		left: -50px;
+	}
+	.bios{
+		font-size: 15px;
+	}
+	.bios img {
+		width: 180px;
+	}
+	/* Tour Page */
+	.tour_bg h1{
+		font-size: 45px;
+	}
+	.tour_leftcolumn, .tour_centercolumn, .tour_rightcolumn {
+		width: 30%;
+	}
+	.tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
+		font-size: 10px;
+	}
+	.tour_content button{
+		font-size: 20px;
+		width: 105px;
+		height: 36px;
+		background-color: #C8DAE9;
+		color: black;
+		border: none;
+		margin: 2%;
+	}
+	.tour_doc {
+		font-size: 20px;
+	}
+	iframe{
+		width: 283px;
+		height: 160px;
+	}
 }
