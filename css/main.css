@@ -53,6 +53,8 @@ header{
 	background-repeat: no-repeat;
 	height: 950px;
 	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
 	position: relative;
 	width: 100vw;
 	display: flex;
@@ -76,9 +78,34 @@ header{
 }
 #about_bg{
 	background-image: url('../img/about_header.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 950px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 #tour_bg{
 	background-image: url('../img/tour_header.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 950px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 header ul {
 	transform: rotate(90deg);
@@ -527,11 +554,12 @@ footer nav ul li a img{
 		width: 30%;
 	}
 	.tour_leftcolumn ul, .tour_centercolumn ul, .tour_rightcolumn ul {
-		font-size: 10px;
+		font-size: 9px;
+		line-height: 250%;
 	}
 	.tour_content button{
-		font-size: 20px;
-		width: 105px;
+		font-size: 15px;
+		width: 100px;
 		height: 36px;
 		background-color: #C8DAE9;
 		color: black;
@@ -539,7 +567,7 @@ footer nav ul li a img{
 		margin: 2%;
 	}
 	.tour_doc {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	iframe{
 		width: 283px;
