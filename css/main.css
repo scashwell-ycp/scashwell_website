@@ -520,12 +520,12 @@ footer nav ul li a img{
 		margin: 2%;
 	}
 	.slick-slide img {
-		width: 200px;
+		width: 60px;
 	}
 	button.slick-next, button.slick-prev {
 		font-size: 0;
 		background-color: transparent;
-		top: 70px !important;
+		top: -5px !important;
 	}
 	/* About Page */
 	.header h1{
